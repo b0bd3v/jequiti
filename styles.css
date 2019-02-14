@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+}
+.bg-jqt{
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
