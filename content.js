@@ -7,12 +7,16 @@ var isVisible = false
 
 
 setInterval(() => {
-    
-    d.style.display = 'block'
-    
-    setTimeout(() => {
-        d.style.display = 'none'
-    }, 50)
+    isVisible = true    
 }, 60000)
+
+setInterval(() => {
+    if (isVisible == true) {
+        d.style.display = 'block'
+        isVisible = false
+    }else{
+        d.style.display = 'none'
+    }
+}, 50)
 
 document.body.appendChild(d);
